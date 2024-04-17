@@ -65,7 +65,7 @@ header nav .vertical {
 
 header nav a {
     text-decoration: none;
-    color: #fff;
+    color: #fff5f7;
     font-size: 16px;
 }
 
@@ -74,24 +74,71 @@ header nav a {
     width: 100%;
 }
 
-.datos {
-    width: 100%;
+/*Servicios*/
+.tabla {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #ccc;*/
+    text-align: center;
     height: 300px;
-    background-color: azure;
+    background-color: #fff5f7;
+}
+
+.columna {
+    flex: 1;
+    padding: 4em 0 4em;
+    border: 1px solid #fce6f7;
+    margin: 20px;
+    /*border-radius: 8px;*/
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+.columna:hover {
+    margin-top: 5px;
+    background-color: #fce6f7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.material-symbols-outlined {
+    font-size: 40px !important;
+    color: #2d2d2d;
+    float: botton;
+    margin: 15px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -o-transition: margin 0.5s ease-out;
 }
 
 
-/*------------PRODUCTOS ---------*/
+.columna,
+h4 {
+    color: #d70788;
+    padding: 1em;
+    font-size: 18px;
+}
+
+.parrafos {
+    color: #666666 !important;
+    padding-top: 0.1em;
+    font-size: 14px;
+}
+
+/*Fin Servicios*/
+
+/*PRODUCTOS*/
 .productos {
     width: 100%;
-    height: 1000px;
     padding: 40px;
-    background-color: rgb(237, 244, 242);
+    background-color: #fff5fc;
 }
 
+/*Titulos de sección*/
 .product2 {
-
-    border-bottom: 2px solid palevioletred;
+    border-bottom: 1px solid #666666;
     height: 80px;
     display: flex;
     justify-content: space-between;
@@ -101,8 +148,8 @@ header nav a {
 
 .product2 h2 {
     color: #232526;
-    font-size: 36px;
-    font-weight: 400;
+    font-size: 24px;
+    font-weight: 600;
 }
 
 .product2 h4 {
@@ -110,12 +157,23 @@ header nav a {
     font-size: 16px;
 }
 
-.product2 span {
-    color: palevioletred;
-    font-size: 28px;
+/*Fin de titulos de sección*/
+
+/*Baners de productos*/
+.fila {
+    display: flex;
 }
 
+.modulo {
+    flex: 1;
+    padding: 4px;
+    /*margin-right: 10px;*/
+}
 
+.modulo:hover {
+    cursor: pointer;
+    padding-top: 2px;
+}
 
 /* FOOTER */
 footer {
