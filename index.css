@@ -313,7 +313,7 @@ footer {
 
 footer h3 {
     font-size: 22px;
-    color: #fff;
+    color: #fff5fc;
     padding-bottom: 40px;
 }
 
@@ -329,13 +329,11 @@ footer .bottomfirst {
     justify-content: space-between;
 }
 
-.bottomfirst .emails i .parrafo {
-    color: #fff;
+.emails  {
+    color: #fff5fc;
     font-size: 12px;
     padding-left: 30px;
     padding-bottom: 20px;
-
-
 }
 
 .social {
