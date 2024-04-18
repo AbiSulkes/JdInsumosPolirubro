@@ -57,17 +57,61 @@ header nav .vertical {
     background-color: #fff5fc;
 }
 
-.cursor:hover {
+/*.cursor:hover {
     color: #d70788;
     border-bottom: 2px solid #d70788;
     padding-bottom: 4px;
+}*/
+
+
+a {
+    font-size: 16px;
+    color: #fff5f7;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    text-decoration: none;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
 }
 
-header nav a {
+a:focus,
+a:hover {
+    color: #d70788;
+}
+
+a:focus:after,
+a:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+a:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #d70788;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+
+/*header nav a {
     text-decoration: none;
     color: #fff5f7;
     font-size: 16px;
-}
+    cursor: pointer;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}*/
 
 /* SECCIONES */
 .banner {
@@ -111,7 +155,7 @@ header nav a {
     color: #2d2d2d;
     float: botton;
     margin: 15px;
- 
+
 }
 
 
@@ -148,9 +192,9 @@ h4 {
     align-items: center;
     flex-direction: column;
     cursor: pointer;
-  }
-  
-  .icon {
+}
+
+.icon {
     margin: 0 auto;
     width: 100%;
     height: 80px;
@@ -163,19 +207,19 @@ h4 {
     transition: all 0.8s ease;
     background-position: 0px;
     background-size: 200px;
-  }
-  
-  
-  .card .title {
+}
+
+
+.card .title {
     width: 100%;
     margin: 0;
     text-align: center;
     margin-top: 30px;
     color: #fce6f7;
     font-weight: 600;
-  }
-  
-  .card .text {
+}
+
+.card .text {
     width: 80%;
     margin: 0 auto;
     font-size: 13px;
@@ -186,28 +230,28 @@ h4 {
     opacity: 0;
     max-height: 0;
     transition: all 0.3s ease;
-  }
-  
-  .card:hover {
+}
+
+.card:hover {
     height: 270px;
-  }
-  
-  .card:hover .text {
+}
+
+.card:hover .text {
     transition: all 0.3s ease;
     opacity: 1;
     max-height: 40px;
-  }
-  
-  .card:hover .icon {
+}
+
+.card:hover .icon {
     background-position: -120px;
     transition: all 0.3s ease;
-  }
-  
-  .card:hover .material-symbols-outlined {
-    color:#d70788;
+}
+
+.card:hover .material-symbols-outlined {
+    color: #d70788;
     transition: all 0.3s ease;
     background-color: #121212;
-  }
+}
 
 
 
@@ -246,11 +290,14 @@ h4 {
 .fila {
     display: flex;
     justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    position: relative;
 }
 
 .modulo {
     flex: 1;
-    padding: 4px;
+    /*padding: 4px;*/
     margin: 0 5px;
 }
 
@@ -274,7 +321,7 @@ footer {
     padding: 40px;
     width: 100%;
     height: 300px;
-   background-color: #0a0a0a;
+    background-color: #0a0a0a;
 }
 
 footer h3 {
