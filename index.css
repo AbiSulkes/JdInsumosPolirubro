@@ -30,6 +30,19 @@
     color: #fff5fc;
     font-size: 14px;
     height: 100%;
+    animation: heartBeat 2s infinite;
+}
+
+@keyframes heartBeat {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 header {
@@ -56,13 +69,6 @@ header nav .vertical {
     height: 20px;
     background-color: #fff5fc;
 }
-
-/*.cursor:hover {
-    color: #d70788;
-    border-bottom: 2px solid #d70788;
-    padding-bottom: 4px;
-}*/
-
 
 a {
     font-size: 16px;
@@ -102,16 +108,6 @@ a:after {
     transition-property: width, left;
 }
 
-
-/*header nav a {
-    text-decoration: none;
-    color: #fff5f7;
-    font-size: 16px;
-    cursor: pointer;
-    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-duration: 400ms;
-  transition-property: color;
-}*/
 
 /* SECCIONES */
 .banner {
@@ -291,29 +287,20 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.3s ease;
-    position: relative;
 }
 
-.modulo {
-    flex: 1;
-    /*padding: 4px;*/
-    margin: 0 5px;
-}
-
-.modulo2 {
-    flex: 1;
-    margin: 0 22px;
+.modulo{
+    margin-top: 30px;
 }
 
 .modulo:hover {
     cursor: pointer;
-    padding-top: 2px;
+
 }
 
 .modulo2:hover {
     cursor: pointer;
-    padding-top: 2px;
+
 }
 
 /* FOOTER */
