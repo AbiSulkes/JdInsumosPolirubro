@@ -210,6 +210,32 @@ header nav .vertical {
 .whatsapp:hover {
     transform: scale(1.1);
 }
+/*---------BANNER RESPONSIVE ----- */
+@media (max-width:800px){
+    .banner .img {
+        padding-right: 20px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        
+    }
+    .banner .img .texto {
+        width: 80%;
+        
+    }
+    .img .texto p {
+        font-size: 17px;
+    }
+    .img .tetxo h3 {
+        font-size: 30px;
+    }
+    .img .texto h4 {
+        font-size: 20px;
+
+    }
+
+}
 
 /*---------CARRUSEL ------------------*/
 .carrusel {
@@ -295,6 +321,15 @@ header nav .vertical {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+/*------ responsive titulo productos ----- */
+@media (max-width:800px){
+    .product2 p {
+        display: none;
+    }
+    .productos {
+        height: auto;
+    }
 }
 
 
@@ -393,6 +428,38 @@ header nav .vertical {
     color: #d70788;
     border: 2px solid #d70788;
 }
+/*------ RESPOSIVE FILA3 ------*/
+@media (max-width:750px){
+    .fila3 {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .fila3 .modulo5 {
+        width: 170px;
+    }
+    .modulo5 .texto2 {
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        height: 300px;
+        padding-left: 0px;
+        
+    } 
+    .modulo5 .texto2 p {
+        display: none;
+    }
+    .fila3 .modulo4 {
+        width: 170px;
+    }
+    .modulo4 .texto1 {
+        width: 100px;
+    }
+}
+
+
+
 /*----- fin de fila 3 -----*/
 /*---- FILA2 contiene los article modulo2, modulo3 ---*/
 /* modulo2 -->texto2, modulo3-->texto1 , comparte estilos
@@ -453,6 +520,25 @@ con los cuadro de texto de modulo4 y modulo5--*/
     align-items: center;
 
 }
+/*----- responsive fila2 ------ */
+@media (max-width:750px){
+    .fila2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .fila2 .modulo2 {
+        border-radius: 50%;
+    }
+        
+}
+
+
+
+
+
+
+
+
 /*--- FIN DE FILA2 ----*/
 /*---- FILA contiene article modulo1, modulo2, modulo12----*/
 
@@ -535,7 +621,26 @@ con los cuadro de texto de modulo4 y modulo5--*/
     height: 4px;
     background-color: #d70788;
 }
-
+/*------ resposive fila ---- */
+@media (max-width:750px){
+    .fila {
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .fila .modulo  {
+        width: 340px;
+        height: 150px;
+    }
+    .fila .modulo1 {
+        width: 340px;
+        height: 150px;
+    } 
+    .fila .modulo12 {
+        width: 340px;
+        height: 150px;
+    }
+}
 
 
 
