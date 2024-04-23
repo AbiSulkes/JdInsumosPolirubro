@@ -886,6 +886,10 @@ footer {
     background-color: #0a0a0a;
 }
 
+footer .logo {
+    padding-bottom: 60px;
+}
+
 footer h3 {
     font-size: 22px;
     color: #fff5fc;
@@ -897,9 +901,10 @@ footer span {
     font-size: 30px;
 }
 
-footer .bottomfirst {
-    padding-top: 80px;
-    border-top: 1px solid #fff;
+footer 
+.bottomfirst {
+    padding-top: 40px;
+    border-top: 1px solid #2d2d2d;
     display: flex;
     justify-content: space-between;
 }
@@ -907,22 +912,34 @@ footer .bottomfirst {
 .emails {
     color: #fff5fc;
     font-size: 12px;
-    padding-left: 30px;
-    padding-bottom: 20px;
+    /*padding-left: 30px;
+    padding-bottom: 20px;*/
+}
+
+.ubicacion {
+    display: flex;
+    align-items: center;
+    margin-bottom: -30px;
+}
+
+.ubicacion .material-symbols-outlined {
+    font-size: 22px !important;
 }
 
 .social {
     display: flex;
     justify-content: space-between;
     width: 100px;
-
+    padding-top: 42px;
 }
 
 .social .vertical {
     width: 2px;
-    height: 26px;
-    background-color: palevioletred;
+    height: 25px;
+    background-color: #2d2d2d;
 }
+
+
 
 @media (max-width: 800px) {
     footer {
