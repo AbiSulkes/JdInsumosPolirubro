@@ -308,14 +308,11 @@ h4 {
 }
 
 .card {
-    
-    width: 250px;
-    height: 200px;
-    
+    width: 274px; 
     height: 250px;
     background-color: #fce6f7;
     margin: 10px;
-    border-radius: 100%;
+    border-radius: 20px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
     border: 2px solid rgba(7, 7, 7, 0.12);
     font-size: 16px;
@@ -328,8 +325,6 @@ h4 {
     cursor: pointer;
 }
 
-
-
 .icon {
     margin: 0 auto;
     width: 70px; /* Ancho del círculo */
@@ -341,7 +336,6 @@ h4 {
     align-items: center;
     transition: all 0.8s ease;
 }
-
 
 .card .title {
     width: 100%;
@@ -404,11 +398,6 @@ h4 {
     }
 }
 
-
-
-
-
-
 /*PRODUCTOS*/
 .productos {
     width: 100%;
@@ -417,6 +406,7 @@ h4 {
     flex-direction: column;
     align-items: center;
     gap: 40px;
+    background-color: #fff5fc;
 }
 
 /*Titulos de sección*/
@@ -436,8 +426,6 @@ h4 {
     font-size: 24px;
     font-weight: 600;
 }
-
-
 
 /*Fin de titulos de sección*/
 
@@ -651,6 +639,7 @@ con los cuadro de texto de modulo4 y modulo5--*/
     }
         
 }
+
 /*--- FIN DE FILA2 ----*/
 
 /*--- FILA 3 contiene dos article modulo4,5 ----*/
@@ -746,6 +735,7 @@ con los cuadro de texto de modulo4 y modulo5--*/
         color: #d70788;
         border: 2px solid #d70788;
     }
+
 /*------ RESPOSIVE FILA3 ------*/
 @media (max-width:750px){
     .fila3 {
@@ -794,8 +784,6 @@ con los cuadro de texto de modulo4 y modulo5--*/
     }
 
 }
-
-
 
 /* FOOTER */
 
