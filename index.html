@@ -21,14 +21,20 @@
 <body>
     <div class="contenedor-cuerpo">
         <div class="preHeader">
-            <p>Envíos a todo el país</p>
+            <p>ENVIOS A TODO EL PAIS</p>
         </div>
         <header>
             <div>
                 <img class="logo" src="https://abisulkes.alwaysdata.net/logo.png" alt="LogoJDInsumos">
             </div>
+            <button class="abrir-menu" id="abrir">
+                <i class="fa-solid fa-bars fa-lg" style="color: #fff5fc;"></i>
+            </button>
 
-            <nav class="nav">
+            <nav class="nav" id="nav">
+                <button class="cerrar-menu" id="cerrar">
+                    <i class="fa-solid fa-xmark fa-lg" style="color: #c81ec2;"></i>
+                </button>
                 <a class="cursor" href="">INFORMACIÓN</a>
                 <div class="vertical"></div>
                 <a class="cursor" href="">PRODUCTOS</a>
@@ -52,12 +58,11 @@
 
 
                 <div class="whatsapp">
-                    <a class="wha" href="" target="_black"><i class="fa-brands fa-whatsapp fa-3x"
-                            style="color: #eff6f4;"></i></a>
-
-
+                    <a class="wha" href="" target="_black"><img src="img/whatsapp.svg" alt="whatsapp"></a>
                 </div>
             </section>
+
+
 
             <!--Servicios-->
 
@@ -125,26 +130,82 @@
 
 
                 <div class="fila">
-                    <div class="modulo"> <img src="https://abisulkes.alwaysdata.net/producto1SinTipo.png" alt="baner1"></div>
-                    <div class="modulo"><img src="https://abisulkes.alwaysdata.net/producto2SinTipo.png" alt="baner2"></div>
-                    <div class="modulo"><img src="https://abisulkes.alwaysdata.net/producto3SinTipo.png" alt="baner3"></div>
+                    <article class="modulo">
+                        <div class="texto01">
+                            <h4>Linea Polyneer mug</h4>
+                            <p>VER MÁS</p>
+                            <div class="barra-hor"></div>
+
+                        </div>
+                    </article>
+                    <article class="modulo1">
+                        <div class="texto01">
+                            <h4>Tinta-Papeles y mas</h4>
+                            <p>VER MÁS</p>
+                            <div class="barra-hor"></div>
+
+                        </div>
+                    </article>
+                    <article class="modulo12">
+                        <div class="texto01">
+                            <h4>Linea Neopren y Tropical</h4>
+                            <p>VER MÁS</p>
+                            <div class="barra-hor"></div>
+
+                        </div>
+                    </article>
                 </div>
 
-                <div class="fila">
-                    <div class="modulo2"> <img src="https://abisulkes.alwaysdata.net/producto4SinTipo.png" alt="baner4"></div>
-                    <div class="modulo2"><img src="https://abisulkes.alwaysdata.net/producto5SinTipo.png" alt="baner5"></div>
+                <div class="fila2">
+                    <article class="modulo2">
+                        <div class="texto2">
+                            <p>Mate aluminio - Tapper y mas...</p>
+                            <h4>Productos para vinilo</h4>
+                            <p class="ver">VER MÁS</p>
+                            <div class="barra-hor"></div>
+                            <button>VER CÁTALOGO</button>
+                        </div>
+                    </article>
+                    <article class="modulo3">
+                        <div class="texto1">
+                            <h4>Agenda y más</h4>
+                            <p>VER MÁS</p>
+                            <div class="barra-hor"></div>
+                        </div>
+                    </article>
                 </div>
-
-                <div class="fila">
-                    <div class="modulo2"> <img src="https://abisulkes.alwaysdata.net/producto6SinTipo.png" alt="baner4"></div>
-                    <div class="modulo2"><img src="https://abisulkes.alwaysdata.net/producto7SinTipo.png" alt="baner5"></div>
+                <div class="fila3">
+                    <article class="modulo4">
+                        <div class="texto1">
+                            <h4>Productos Varios</h4>
+                            <p>VER MÁS</p>
+                            <div class="barra-hor"></div>
+                        </div>
+                    </article>
+                    <article class="modulo5"> 
+                        <div class="texto2">
+                            <p>Taza magica - Chopp hoppy</p>
+                            <h4>Productos de Ceramica</h4>
+                            <p class="ver">VER MÁS</p>
+                            <div class="barra-hor"></div>
+                            <button>VER CÁTALOGO</button>
+                        </div>
+                    </article>
                 </div>
             </section>
-
-
-
             <!--fin Productos-->
+
+
         </main>
+
+                   
+
+                   
+
+                    
+
+
+
         <!--FOOTER-->
         <footer>
             <div class="contacto">
@@ -184,6 +245,9 @@
 
     </div>
 
+
+
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
