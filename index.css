@@ -215,6 +215,37 @@ header nav .vertical {
 .whatsapp:hover {
     transform: scale(1.1);
 }
+@media (max-width:800px){
+    
+    .banner .img {
+        padding-right: 20px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+        
+        
+    .banner .img .texto {
+        width: 80%;
+        
+    }
+    .img .texto p {
+        font-size: 17px;
+    }
+    .img .tetxo h3 {
+        font-size: 30px;
+    }
+    .img .texto h4 {
+        font-size: 20px;
+
+    }
+
+}
+
+
+
+
 /* Fin Baner Principal*/
 
 /*Servicios*/
@@ -225,8 +256,8 @@ header nav .vertical {
     align-items: center;
     /* border: 1px solid #ccc;*/
     text-align: center;
-    height: 300px;
-    background-color: #fff5f7;
+    
+    
 }
 
 .columna {
@@ -277,13 +308,14 @@ h4 {
 }
 
 .card {
-    width: 100%;
-    max-width: 274px;
-    min-width: 200px;
+    
+    width: 250px;
+    height: 200px;
+    
     height: 250px;
     background-color: #fce6f7;
     margin: 10px;
-    border-radius: 10px;
+    border-radius: 100%;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
     border: 2px solid rgba(7, 7, 7, 0.12);
     font-size: 16px;
@@ -354,6 +386,24 @@ h4 {
     transition: all 0.3s ease;
  
 }
+@media (max-width:800px){
+    
+    .card {
+        width: 170px;
+        height: 130px;
+    }
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+    .card .text {
+        font-size: 10px;
+    }
+    .card .title {
+        margin-top: 10px;
+    }
+}
+
 
 
 
@@ -595,6 +645,10 @@ con los cuadro de texto de modulo4 y modulo5--*/
         width: 350px;
         height: 150px;
     }
+    .modulo3 .texto1 {
+        padding-top: 0;
+        width: 200px;
+    }
         
 }
 /*--- FIN DE FILA2 ----*/
@@ -735,27 +789,16 @@ con los cuadro de texto de modulo4 y modulo5--*/
         height: 150px;
     }
     .modulo4 .texto1 {
-        width: 100px;
+        padding-top: 0;
+        width: 200px;
     }
 
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* FOOTER */
+
 footer {
     padding: 40px;
     width: 100%;
@@ -763,32 +806,19 @@ footer {
     background-color: #0a0a0a;
 }
 
-.contacto {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+footer h3 {
+    font-size: 22px;
+    color: #fff5fc;
+    padding-bottom: 40px;
 }
 
-.contacto nav {
-    display: flex;
-    justify-content: space-between;
-    width: 300px;
-    padding-bottom: 50px;
-}
-
-.contacto nav .vertical {
-    width: 2px;
-    height: 20px;
-    background-color: #fff5fc;
-}
-
-
-footer .logo{
-    padding-bottom:40px ;
+footer span {
+    color: palevioletred;
+    font-size: 30px;
 }
 
 footer .bottomfirst {
-    padding-top: 40px;
+    padding-top: 80px;
     border-top: 1px solid #fff;
     display: flex;
     justify-content: space-between;
@@ -796,36 +826,66 @@ footer .bottomfirst {
 
 .emails  {
     color: #fff5fc;
-    font-size: 13px;
-}
-
-.horario{
-    display: flex;
-    align-items: center;
-}
-
-.horario .material-symbols-outlined{
-    font-size: 24px !important;
-    color: #fff5f7;
+    font-size: 12px;
+    padding-left: 30px;
+    padding-bottom: 20px;
 }
 
 .social {
     display: flex;
     justify-content: space-between;
     width: 100px;
-    padding-top: 10px;
-    cursor: pointer;
-}
 
+}
 .social .vertical {
     width: 2px;
     height: 26px;
     background-color: palevioletred;
 }
-
-.terminos{
-    color: #fff5fc;
-    font-size: 12px;
-    text-align: center;
-    padding-top: 50px;
+@media (max-width: 800px){
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer img {
+        padding-bottom: 20px;
+    }
+    footer .bottomfirst {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+        width: 350px;
+        
+    }
+    .emails p {
+        padding: 5px;
+        line-height: 20px;
+    }
+    .social {
+        width: 150px;
+        display: flex;
+        justify-content: space-around;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
